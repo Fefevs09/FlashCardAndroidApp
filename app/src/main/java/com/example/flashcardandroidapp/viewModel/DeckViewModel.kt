@@ -13,13 +13,15 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.time.LocalDateTime
+import javax.inject.Inject
 
 @RequiresApi(Build.VERSION_CODES.O)
 @HiltViewModel
-class DeckViewModel(
+class DeckViewModel @Inject constructor(
     private val repository: DeckRepository
 ): ViewModel() {
-    var deck by mutableStateOf(Deck(0, "", LocalDateTime.now()))
+
+    var deck by mutableStateOf<Deck?>(null)
         private set
 
     val getAllDecks = repository.getAllDecks()
@@ -60,6 +62,6 @@ class DeckViewModel(
     }
 
     fun updateTitle(newTitle: String) {
-        deck = deck.copy(title = newTitle)
+        deck = deck?.copy(title = newTitle)
     }
 }
