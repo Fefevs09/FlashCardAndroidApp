@@ -4,4 +4,5 @@ enum class Feedback {
     EASY,
     GOOD,
     HARD,
+    NONE
 }
