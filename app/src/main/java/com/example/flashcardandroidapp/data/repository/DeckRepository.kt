@@ -8,7 +8,7 @@ class DeckRepository(
     private val deckDao: DeckDao
 ) {
 
-    fun getAllDeck(): Flow<List<Deck>> = deckDao.getAllDeck()
+    fun getAllDecks(): Flow<List<Deck>> = deckDao.getAllDeck()
 
     suspend fun getDeckById(id: Int): Deck = deckDao.getDeckById(id = id)
 
