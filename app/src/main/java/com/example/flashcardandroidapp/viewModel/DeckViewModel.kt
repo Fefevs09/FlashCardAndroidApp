@@ -1,7 +1,5 @@
 package com.example.flashcardandroidapp.viewModel
 
-import android.os.Build
-import androidx.annotation.RequiresApi
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -12,10 +10,8 @@ import com.example.flashcardandroidapp.domain.model.deck.Deck
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import java.time.LocalDateTime
 import javax.inject.Inject
 
-@RequiresApi(Build.VERSION_CODES.O)
 @HiltViewModel
 class DeckViewModel @Inject constructor(
     private val repository: DeckRepository

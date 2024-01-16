@@ -3,11 +3,24 @@ package com.example.flashcardandroidapp.domain.model.card
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
+import androidx.room.Index
 import androidx.room.PrimaryKey
 import com.example.flashcardandroidapp.domain.model.deck.Deck
 import java.time.LocalDateTime
 
-@Entity(tableName = "Card", foreignKeys = [ForeignKey(entity = Deck::class, parentColumns = ["id"], childColumns = ["deckId"], onDelete = ForeignKey.CASCADE)])
+@Entity(
+    tableName = "Card",
+    foreignKeys = [
+        ForeignKey(
+            entity = Deck::class,
+            parentColumns = ["id"],
+            childColumns = ["deckId"],
+            onDelete = ForeignKey.CASCADE
+        )
+    ],
+    indices = [Index("deckId")]
+
+    )
 data class Card(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
@@ -21,6 +34,6 @@ data class Card(
     val feedback: Feedback,
     @ColumnInfo(name = "review_data")
     val reviewData: LocalDateTime,
-    @ColumnInfo(name = "deck_id")
+    @ColumnInfo(name = "deckId")
     val deckId: Int
 )

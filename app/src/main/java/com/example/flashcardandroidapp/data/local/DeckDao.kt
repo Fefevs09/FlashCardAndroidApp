@@ -1,7 +1,6 @@
 package com.example.flashcardandroidapp.data.local
 
 import androidx.room.Dao
-import androidx.room.Database
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
@@ -16,7 +15,7 @@ interface DeckDao {
     @Query("SELECT * FROM Deck")
     fun getAllDeck(): Flow<List<Deck>>
 
-    @Query("SELECT * FROM Deck WHERE id= :id")
+    @Query("SELECT * FROM Deck WHERE id = :id")
     suspend fun getDeckById(id: Int): Deck
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

@@ -2,7 +2,28 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="DeckDaoTest">
+        <State />
+      </entry>
       <entry key="app">
+        <State />
+      </entry>
+      <entry key="deleteDeck_returnTrue()">
+        <State />
+      </entry>
+      <entry key="insertDeck_return1()">
+        <State />
+      </entry>
+      <entry key="insertDecks_returnDecksInserts()">
+        <State />
+      </entry>
+      <entry key="insertDecks_returnDecksSize()">
+        <State />
+      </entry>
+      <entry key="updateDeck_returnDeckUpdatedf()">
+        <State />
+      </entry>
+      <entry key="writeDeck()">
         <State />
       </entry>
     </value>
