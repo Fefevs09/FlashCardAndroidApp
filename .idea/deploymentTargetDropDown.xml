@@ -2,28 +2,28 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="CardDaoTest">
+        <State />
+      </entry>
       <entry key="DeckDaoTest">
         <State />
       </entry>
       <entry key="app">
         <State />
       </entry>
-      <entry key="deleteDeck_returnTrue()">
+      <entry key="deleteDeck_returnNoneCard()">
         <State />
       </entry>
-      <entry key="getDeckById_returnTrue()">
-        <State />
-      </entry>
-      <entry key="insertCard_returnTrue()">
+      <entry key="getCardById_returnCard()">
         <State />
       </entry>
       <entry key="insertDeck_return1()">
         <State />
       </entry>
-      <entry key="insertDecks_returnDecksInserts()">
+      <entry key="testGetDeckById()">
         <State />
       </entry>
-      <entry key="updateDeck_returnDeckUpdatedf()">
+      <entry key="updateCard_returnUpdatedCard()">
         <State />
       </entry>
     </value>
