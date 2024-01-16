@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.Flow
 class CardRepository(
     private val cardDao: CardDao
 ) {
-    fun getAllCardsById(deckId: Int): Flow<List<Card>> = cardDao.getAllCardsById(deckId = deckId)
+    fun getAllCardsByDeckId(deckId: Int): Flow<List<Card>> = cardDao.getAllCardsByDeckId(deckId = deckId)
 
     suspend fun getCardById(id: Int): Card = cardDao.getCardById(id = id)
 

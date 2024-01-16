@@ -16,7 +16,7 @@ interface CardDao {
 //    fun getAllCard(): Flow<List<Card>>
 
     @Query("SELECT * FROM Card WHERE deckId = :deckId")
-    fun getAllCardsById(deckId: Int): Flow<List<Card>>
+    fun getAllCardsByDeckId(deckId: Int): Flow<List<Card>>
 
     @Query("SELECT * FROM Card WHERE id= :id")
     suspend fun getCardById(id: Int): Card

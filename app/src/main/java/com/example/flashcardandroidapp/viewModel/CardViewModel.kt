@@ -5,7 +5,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.flashcardandroidapp.data.repository.CardRepository
 import com.example.flashcardandroidapp.domain.model.card.Card
 import com.example.flashcardandroidapp.domain.model.card.Feedback
@@ -31,7 +30,7 @@ class CardViewModel @Inject constructor(
 
     fun getAllCardsById(deckId: Int) {
         viewModelScope.launch(Dispatchers.IO) {
-            repository.getAllCardsById(deckId).collect { card ->
+            repository.getAllCardsByDeckId(deckId).collect { card ->
                 cards = card
             }
         }
