@@ -76,7 +76,7 @@ dependencies {
     testImplementation("androidx.room:room-testing:2.6.1")
     testImplementation("org.mockito:mockito-core:3.11.2")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1") // Substitua x.x.x pela versão mais recente
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
     //Android Test
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
