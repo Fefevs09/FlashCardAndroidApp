@@ -2,7 +2,15 @@
 With the aim of assisting the student community in reviewing content more interactively, I'm developing an algorithm that will aid in spaced repetition, enhancing student performance.
 
 ## Stacks
-Kotlin | Jetpack Compose | Hint | Room | Unit Test | architecture | MVVM
+Kotlin | Jetpack Compose | Hint | Room | Navigation | Unit Test | MVVM
+
+## Importance
+
+### Spaced Repetition
+Spaced repetition is a learning strategy that involves systematically reviewing information at increasing intervals to enhance long-term retention. By exposing learners to material just before they are likely to forget it, spaced repetition aims to strengthen memory and optimize the learning process. The intervals between reviews are adaptive, with successful recall leading to longer gaps and challenges prompting more immediate revisits. This approach is often facilitated through specialized software or flashcard systems, leveraging the spacing effect to improve memorization and overall knowledge retention.
+
+![Spaced Rep](https://github.com/Fefevs09/FlashCardAndroidApp/assets/100977797/2132a857-d81d-45ff-9a2f-81075348319e)
+
 
 ## Functionalities
 - Deck organized
