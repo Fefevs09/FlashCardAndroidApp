@@ -1,8 +1,8 @@
-# Flash Card App
+# Mind Refresh (Flash Card App)
 With the aim of assisting the student community in reviewing content more interactively, I'm developing an algorithm that will aid in spaced repetition, enhancing student performance.
 
 ## Stacks
-Kotlin | Jetpack Compose | Hint | Room | Navigation | Unit Test | MVVM
+Kotlin | Jetpack Compose | Hint | Room | Retrofit| Navigation | Unit Test | MVVM
 
 ## Importance
 
@@ -16,6 +16,7 @@ Spaced repetition is a learning strategy that involves systematically reviewing 
 - Deck organized
 - Revision cards
 - Notification
+- AI create cards
 
 ### Deck organized
 Organize all your cards in decks, where user can sort it as sees fit
@@ -27,4 +28,7 @@ The cards will appear mostly more difficult for user can finally learn that subj
 
 ### Notification
 Notification user when he has review your cards
+
+### AI create cards
+With AI, users can automate card creation. Users only need to say what subject they want to create, and AI will create it for them.
 
