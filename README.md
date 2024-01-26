@@ -2,7 +2,7 @@
 With the aim of assisting the student community in reviewing content more interactively, I'm developing an algorithm that will aid in spaced repetition, enhancing student performance.
 
 ## Stacks
-Kotlin | Jetpack Compose | Hint | Room | Retrofit| Navigation | Unit Test | MVVM
+Kotlin | Jetpack Compose | Hilt | Room | Retrofit | Navigation | Unit Test | MVVM
 
 ## Importance
 
